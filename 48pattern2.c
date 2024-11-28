@@ -1,15 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-int a,b,n;
-printf("enter the number of time you want the loop to run \t");
-scanf("%d",&n);
-    for(int a=1;a<=n;a++)
+    int n;
+    printf("enter uptil where you want loop\t");
+    scanf("%d",&n);
+    for (int i = 1; i <=n; i++)
     {
-    for(int b=1;b<=a;b++)
-    {
-    printf("%d",b);
-    }
-    printf("\n");
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf(" ");
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            printf("%d", k);
+        }
+        printf("\n");
     }
 }
